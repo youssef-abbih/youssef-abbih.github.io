@@ -1,35 +1,57 @@
-name: Build and Deploy Hugo site to GitHub Pages
+name: Build and Deploy Hugo site
 
 on:
   push:
     branches:
-      - main
+      - main  # Or change to your default branch
+  pull_request:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
+      # Checkout repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Setup Hugo (Extended)
+      # Setup Hugo (Extended version)
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.121.1'
+          hugo-version: '0.128.1'  # Toha v4 requires Hugo >= 0.128
           extended: true
 
-      - name: Initialize Hugo Modules
-        run: hugo mod tidy && hugo mod npm pack
+      # Setup Go (Hugo Modules require Go)
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.20'
 
+      # Setup Node.js (Toha requires Node >= 18.x)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18.x'
+
+      # Install npm dependencies (needed for Toha v4)
+      - name: Install npm dependencies
+        run: npm ci
+
+      # Initialize Hugo Modules
+      - name: Initialize Hugo Modules
+        run: hugo mod tidy
+
+      # Build Hugo site
       - name: Build site
         run: hugo --minify
 
-      - name: Disable Jekyll
-        run: touch public/.nojekyll
-
+      # Deploy to GitHub Pages
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
