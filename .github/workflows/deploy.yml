@@ -10,20 +10,23 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repo
+      - name: Checkout code
         uses: actions/checkout@v3
 
       - name: Setup Hugo (Extended)
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.121.1' # Use latest Toha-compatible version
+          hugo-version: '0.121.1'
           extended: true
 
-      - name: Get Hugo Modules
-        run: hugo mod get
+      - name: Initialize Hugo Modules
+        run: hugo mod tidy && hugo mod npm pack
 
-      - name: Build
+      - name: Build site
         run: hugo --minify
+
+      - name: Disable Jekyll
+        run: touch public/.nojekyll
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
