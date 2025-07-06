@@ -1,0 +1,21 @@
+# some information about you
+name: "Youssef Abbih"
+nickname: "Youssef"
+# greeting message before your name. it will default to "Hi! I am" if not provided
+greeting: "Hi, I am"
+image: "images/author/me.png"
+# give your some contact information. they will be used in the footer
+contactInfo:
+  email: "youssef.abbih@hotmail.com"
+  phone: "+33658827634"
+  github: youssef-abbih
+  linkedin: youssef-abbih
+
+# some summary about what you do
+summary:
+  - Python Developer focused on Backend & Automation
+  - Experienced with Django, Docker, Kubernetes & AWS
+  - Builds Python CLI tools to improve developer workflows
+  - Passionate about clean, scalable systems and automation
+  - Learning Go and exploring cloud-native architectures
+  - Open to remote opportunities (Africa, Middle East, Asia)

@@ -1,0 +1,52 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+# buttons:
+# - name: All
+#   filter: "all"
+# - name: Professional
+#   filter: "professional"
+# - name: Academic
+#   filter: "academic"
+# - name: Hobby
+#   filter: "hobby"
+projects:
+- name: Django Weather App Deployment
+  # logo: images/projects/django-weather.png
+  role: Developer
+  timeline: "Jan 2024 – Feb 2024"
+  # repo: ""  # add if hosted on GitHub
+  summary: Developed and deployed a Django-based weather application on Kubernetes with full CI/CD using Jenkins and Ansible.
+  tags: ["django", "docker", "kubernetes", "ci/cd", "personal"]
+
+- name: Multithreaded HTTP Server in Go
+  # logo: images/projects/go-http-server.png
+  role: Developer
+  timeline: "Aug 2023 – Sep 2023"
+  repo: ""  # insert your GitHub repo if available
+  summary: Built a RESTful multithreaded HTTP server in Go supporting GET, POST, and DELETE, with concurrent connection handling.
+  tags: ["go", "http", "networking", "personal"]
+
+- name: To-Do List API in Go
+  # logo: images/projects/todo-api-go.png
+  role: Developer
+  timeline: "Apr 2024 – May 2024"
+  repo: ""  # add your GitHub link if available
+  summary: Developed a RESTful API in Go to manage to-do tasks with endpoints for creating, retrieving, updating, and deleting tasks. Included in-memory storage and graceful error handling.
+  tags: ["go", "api", "rest", "personal"]
+
+- name: Python Learning Projects
+  # logo: images/projects/python-learning.png
+  role: Developer
+  timeline: "2021 – 2022"
+  repo: https://github.com/youssef-abbih/python_projects
+  summary: A collection of beginner to intermediate Python projects built during the early phase of learning Python. Includes automation scripts, games, and mini-tools.
+  tags: ["python", "learning", "automation", "personal"]
+
+

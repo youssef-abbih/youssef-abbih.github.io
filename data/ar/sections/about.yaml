@@ -1,0 +1,63 @@
+# section information
+section:
+  name: عني
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: DevOps Engineer
+# your company information
+# company:
+#   name: Example Co.
+#   url: "https://www.example.com"
+
+# your resume. this file path should be relative to you "static" directory
+#resume: "files/resume.pdf"
+
+# a summary about you
+summary: I’m a passionate DevOps engineer with 3+ years of hands-on experience in automation, infrastructure monitoring, and backend development. I’ve built and deployed scalable solutions using Kubernetes, Docker, and Ansible—often automating everything from infrastructure provisioning to observability with tools like Zabbix and Prometheus. I also enjoy developing backend services and REST APIs in Python and Go, and I’ve built full-stack apps using Django for fun and learning. My open-source-style projects reflect my passion for clean automation, efficient monitoring, and developer-friendly tooling.
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "youssef.abbih@hotmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/youssef-abbih"
+
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/youssef-abbih"
+
+badges:
+- type: certification
+  name: Certified Kubernetes Application Developer
+  url: "https://www.credly.com/org/the-linux-foundation/badge/ckad-certified-kubernetes-application-developer"
+  badge: "https://images.credly.com/size/680x680/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob"
+
+- type: certification
+  name: AWS Certified Cloud Practitioner
+  url: "https://www.credly.com/badges/200ec8fa-a9c4-4855-b5a6-117a7921114b/public_url"
+  badge: "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+
+- type: soft-skill-indicator
+  name: Team Collaboration
+  percentage: 75
+  color: yellow
+
+- type: soft-skill-indicator
+  name: Problem Solving
+  percentage: 85
+  color: green
+
+- type: soft-skill-indicator
+  name: Adaptability
+  percentage: 90
+  color: purple

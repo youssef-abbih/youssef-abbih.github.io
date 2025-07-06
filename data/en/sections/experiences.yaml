@@ -1,0 +1,34 @@
+section:
+  name: Experiences # Titre de la section (par défaut: "" )
+  id: experiences # url id/slug of section *Required*
+  enable: true
+  weight: 3
+  showOnNavbar: true
+
+experiences:
+- company:
+    name: Squad
+    url: "https://www.squad.fr"
+    location: Colomiers, France
+  positions:
+    - designation:  Python Developer – Backend & Automation
+      start: Oct 2022
+      end: Feb 2025
+      responsibilities:
+        - Designed and deployed Zabbix monitoring models, cutting network downtime by 20%.
+        - Built a Python pipeline for interactive network maps, improving visibility by 40%.
+        - Maintained CI/CD pipelines (Jenkins, Kubernetes) and automated deployments with Ansible/AWX.
+        - Worked in an English-speaking environment with distributed teams.
+
+- company:
+    name: Consort France
+    url: "https://www.consort-group.com"
+    location: Issy-les-Moulineaux, France
+  positions:
+    - designation: Python Developer
+      start: Sep 2021
+      end: Aug 2022
+      responsibilities:
+        - Developed an automated reporting tool, reducing KPI generation time from 0.5 days to 15 minutes.
+        - Designed interactive dashboards with Dash & Plotly for business teams.
+

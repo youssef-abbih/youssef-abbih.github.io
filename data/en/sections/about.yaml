@@ -1,0 +1,68 @@
+# section information
+section:
+  name: About
+  id: about
+  enable: true
+  weight: 1
+  showOnNavbar: true
+  template: sections/about.html
+
+# your designation
+designation: Python Developer & Toolsmith
+# your company information
+company:
+  name: Open to Remote Opportunities
+  url: "mailto:youssef.abbih@hotmail.com"
+
+# your resume. this file path should be relative to you "static" directory
+# resume: "files/resume.pdf"
+
+# a summary about you
+summary: "Hi, I’m Youssef – Python Developer (Backend & Automation)
+
+I specialize in building robust backend systems, automation pipelines, and cloud-native solutions using Python, Django, Docker, and Kubernetes. Over the past few years, I’ve delivered projects that reduced network downtime, streamlined DevOps workflows, and improved reporting processes for enterprise clients.
+
+I’m passionate about writing clean, scalable code and collaborating with distributed teams to ship high-quality software. I also explore other technologies like Go to expand my backend skill set."
+
+# your social links
+# give as many as you want. use font-awesome for the icons.
+socialLinks:
+- name: Email
+  icon: "fas fa-envelope"
+  url: "youssef.abbih@hotmail.com"
+
+- name: Github
+  icon: "fab fa-github"
+  url: "https://www.github.com/youssef-abbih"
+
+
+- name: LinkedIn
+  icon: "fab fa-linkedin"
+  url: "https://www.linkedin.com/yabbih"
+
+badges:
+- type: certification
+  name: Certified Kubernetes Application Developer
+  url: "https://www.credly.com/org/the-linux-foundation/badge/ckad-certified-kubernetes-application-developer"
+  badge: "https://images.credly.com/size/680x680/images/cc8adc83-1dc6-4d57-8e20-22171247e052/blob"
+
+- type: certification
+  name: AWS Certified Cloud Practitioner
+  url: "https://www.credly.com/badges/200ec8fa-a9c4-4855-b5a6-117a7921114b/public_url"
+  badge: "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png"
+
+- type: soft-skill-indicator
+  name: Team Collaboration
+  percentage: 75
+  color: yellow
+
+- type: soft-skill-indicator
+  name: Problem Solving
+  percentage: 85
+  color: green
+
+- type: soft-skill-indicator
+  name: Adaptability
+  percentage: 90
+  color: purple
+

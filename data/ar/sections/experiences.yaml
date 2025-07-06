@@ -1,0 +1,37 @@
+section:
+  name: الخبرات # عنوان القسم (افتراضي: "")
+  id: experiences # المعرف/الاسم المميز للرابط *مطلوب*
+  enable: true
+  weight: 3
+  showOnNavbar: true
+  # يمكن إخفاء العنوان في القسم
+  # hideTitle: true 
+
+# خبراتك المهنية
+experiences:
+- company:
+    name: Squad
+    location: كولومييه، فرنسا
+  positions:
+    - designation: مهندس DevOps للأتمتة
+      start: أكتوبر 2022
+      end: فبراير 2025
+      responsibilities:
+        - تطوير قوالب Zabbix مخصصة، مما قلل من توقف الشبكة بنسبة 20٪.
+        - أتمتة خرائط الشبكة الديناميكية باستخدام IP Fabric وNetBox وPython.
+        - إنشاء قوالب وظائف AWX لمصدّري Node وMySQL.
+        - إدارة Zabbix على AWS EKS وصيانة خطوط CI باستخدام Jenkins.
+        - كتابة توثيق في Confluence والتعامل مع أكثر من 50 تذكرة Jira شهريًا.
+
+- company:
+    name: Consort France
+    location: إيسي-لي-مولينو، فرنسا
+  positions:
+    - designation: مطوّر Python
+      start: سبتمبر 2021
+      end: أغسطس 2022
+      responsibilities:
+        - بناء تطبيق أتمتة لوحات البيانات باستخدام Dash وPlotly.
+        - تصميم خط بيانات كامل لتقارير مؤشرات الأداء.
+        - دمج مقاييس أداء معقدة مع مهندسين كبار.
+        - تحسين استجابة واجهة المستخدم باستخدام HTML وCSS.

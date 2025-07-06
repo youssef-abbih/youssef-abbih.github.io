@@ -1,0 +1,68 @@
+# section information
+section:
+  name: Projects
+  id: projects
+  enable: true
+  weight: 5
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+# buttons:
+# - name: All
+#   filter: "all"
+# - name: Professional
+#   filter: "professional"
+# - name: Academic
+#   filter: "academic"
+# - name: Hobby
+#   filter: "hobby"
+projects:
+- name: Yark
+  role: Creator & Developer
+  timeline: "Jun 2025 – Present"
+  # repo: https://github.com/youssef-abbih/yark
+  summary: A Python CLI tool that generates and validates project directory structures from YAML files, enabling developers to define and enforce consistent folder and file layouts easily.
+  tags: ["python", "cli", "yaml", "tooling", "in-progress"]
+
+- name: DeployMe
+  role: Creator & Developer
+  timeline: "Planned – 2025"
+  repo: 
+  summary: A lightweight CLI-based CI/CD orchestrator using Python and Docker. Designed to simplify deployment pipelines for small to medium projects with minimal configuration.
+  tags: ["python", "docker", "ci/cd", "tooling", "planned"]
+
+- name: AutoDoc
+  role: Creator & Developer
+  timeline: "Planned – 2025"
+  repo: 
+  summary: A documentation generator that converts Python scripts into structured Markdown with dependency insights, helping developers maintain clear and consistent project docs.
+  tags: ["python", "documentation", "cli", "planned"]
+- name: Django Weather App Deployment
+  role: Developer
+  timeline: "Jan 2024 – Feb 2024"
+  repo: https://github.com/youssef-abbih/django-weather-app
+  summary: Developed and deployed a Django-based weather application on Kubernetes with full CI/CD using Jenkins.
+  tags: ["django", "docker", "kubernetes", "ci/cd", "personal"]
+
+# - name: Multithreaded HTTP Server in Go
+#   role: Developer
+#   timeline: "Aug 2023 – Sep 2023"
+#   repo: https://github.com/youssef-abbih/
+#   summary: Built a RESTful multithreaded HTTP server in Go supporting GET, POST, and DELETE, with concurrent connection handling.
+#   tags: ["Go", "http", "networking", "personal"]
+
+- name: To-Do List API in Go
+  role: Developer
+  timeline: "Apr 2024 – May 2024"
+  repo: https://github.com/youssef-abbih/go-todo-list
+  summary: Developed a RESTful API in Go to manage to-do tasks with endpoints for creating, retrieving, updating, and deleting tasks. Included in-memory storage and graceful error handling.
+  tags: ["Go", "API", "REST", "personal"]
+
+- name: Python Learning Projects
+  role: Developer
+  timeline: "2021 – 2022"
+  repo: https://github.com/youssef-abbih/python_projects
+  summary: A collection of beginner to intermediate Python projects built during the early phase of learning Python. Includes automation scripts, games, and mini-tools.
+  tags: ["python", "learning", "automation", "personal"]
+
+

@@ -1,0 +1,19 @@
+# بعض المعلومات عنك
+name: "يوسف أبيه"
+nickname: "يوسف"
+# رسالة ترحيبية قبل اسمك. ستظهر "مرحبًا! أنا" بشكل افتراضي إذا لم تُحدد
+greeting: "مرحبًا، أنا"
+image: "images/author/me.png"
+# معلومات التواصل الخاصة بك. ستُستخدم في تذييل الموقع
+contactInfo:
+  email: "youssef.abbih@hotmail.com"
+  phone: "+33658827634"
+  github: youssef-abbih
+  linkedin: youssef-abbih
+
+# ملخص عن ما تقوم به
+summary:
+  - أنا مطور
+  - أنا مهندس ديف أوبس
+  - أحب العمل على مشاريع ممتعة
+

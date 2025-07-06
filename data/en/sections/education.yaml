@@ -1,0 +1,32 @@
+# section information
+section:
+  name: Education
+  id: education
+  template: sections/education.html # Use "sections/education-alt.html for alternate template.
+  enable: true
+  weight: 4
+  showOnNavbar: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+
+degrees:
+  - name: Master's Degree in Embedded Systems
+    icon: fa-microchip
+    timeframe: 2018–2021
+    institution:
+      name: Université Paul Sabatier, Toulouse
+    custonSections:
+      - name: Focus Areas
+        content: Embedded programming, real-time systems, and microcontroller design.
+
+  - name: Bachelor's Degree in Electrical Engineering
+    icon: fa-bolt
+    timeframe: 2015–2018
+    institution:
+      name: Université Paul Sabatier, Toulouse
+
+  - name: Baccalaureate in Physics
+    icon: fa-atom
+    timeframe: 2012-2013
+    institution:
+      name: Lycée Al Fath, Taourirt

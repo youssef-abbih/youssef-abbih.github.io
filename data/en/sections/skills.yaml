@@ -1,0 +1,101 @@
+# section information
+section:
+  name: Skills
+  id: skills
+  enable: true
+  weight: 2
+  showOnNavbar: true
+  filter: true
+  # Can optionally hide the title in sections
+  # hideTitle: true
+# Your Skills.
+# Give a summary of you each skill in the summary section.
+buttons:
+- name: All
+  filter: "all"
+- name: Languages
+  filter: "language"
+- name: Frameworks
+  filter: "frameworks"
+- name: Databases
+  filter: "database"
+- name: DevOps
+  filter: "devops"
+- name: Cloud
+  filter: "cloud"
+- name: Monitoring
+  filter: "monitoring"
+- name: Tools
+  filter: "tools"
+
+skills:
+- name: Python
+  logo: images/sections/skills/python.png
+  summary: "Used extensively for scripting, dashboards (Dash, Plotly), automation, and backend development."
+  categories: ["all", "language"]
+
+- name: C
+  logo: images/sections/skills/c.png
+  summary: "Built low-level utilities and practiced memory management, data structures, and algorithm design with C. Comfortable with pointers, manual allocation, and debugging."
+  categories: ["all", "language"]
+
+- name: Go
+  logo: images/sections/skills/go.png
+  summary: "Developed secure, containerized REST APIs and a multithreaded HTTP server with Go, leveraging goroutines, channels, and middleware patterns."
+  categories: ["all", "language"]
+
+- name: Kubernetes
+  logo: images/sections/skills/kubernetes.png
+  summary: "Deployed containerized apps and exporters; experienced with CRDs, controllers, and EKS."
+  categories: ["all", "container", "devops", "cloud"]
+
+- name: Docker
+  logo: images/sections/skills/docker.png
+  summary: "Containerized Django apps and development environments; integrated into CI/CD pipelines."
+  categories: ["all", "container", "devops"]
+
+- name: AWS
+  logo: images/sections/skills/aws.png
+  summary: "Worked with EC2, EKS, RDS, S3, Lambda; certified AWS Cloud Practitioner."
+  categories: ["all", "cloud", "devops"]
+
+- name: Jenkins
+  logo: images/sections/skills/jenkins.png
+  summary: "Designed CI/CD pipelines for building, testing, and deploying containerized apps."
+  categories: ["all", "devops", "tools"]
+
+- name: Ansible
+  logo: images/sections/skills/ansible.png
+  summary: "Used for provisioning Kubernetes clusters and automating app deployment."
+  categories: ["all", "devops", "tools"]
+
+- name: Zabbix
+  logo: images/sections/skills/zabbix.png
+  summary: "Developed custom templates and automated real-time monitoring via SNMP and APIs."
+  categories: ["all", "monitoring"]
+
+- name: Git
+  logo: images/sections/skills/git.png
+  summary: "Used for version control in all personal and professional projects."
+  categories: ["all", "tools"]
+
+- name: HTML/CSS
+  logo: images/sections/skills/html-css.png
+  summary: "Used for UI styling and web interfaces in dashboard and web apps."
+  categories: ["all", "language"]
+
+- name: Django
+  logo: images/sections/skills/django.png
+  summary: "Built a dynamic weather web app using Django, showcasing template rendering, views, URL routing, and API integration."
+  categories: ["all", "frameworks"]
+
+- name: PostgreSQL
+  logo: images/sections/skills/postgresql.png
+  summary: "Used as the primary datastore for a secure TodoList API, with auto-migrations, relational modeling, and JWT-based user data isolation."
+  categories: ["all", "database"]
+
+- name: Pandas
+  logo: images/sections/skills/pandas.png
+  summary: "Used for efficient data cleaning, transformation, and analysis in scripting and exploratory data projects."
+  categories: ["all", "language", "data"]
+
