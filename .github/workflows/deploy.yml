@@ -22,7 +22,7 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: '0.128.1'  # Toha v4 requires Hugo >= 0.128
+          hugo-version: '0.146.0'
           extended: true
 
       # Setup Go (Hugo Modules require Go)
