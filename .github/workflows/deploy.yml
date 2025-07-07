@@ -1,57 +1,53 @@
-name: Build and Deploy Hugo site
+name: Build and Deploy Site
 
 on:
   push:
     branches:
-      - main  # Or change to your default branch
-  pull_request:
-
-permissions:
-  contents: write
+      - main
 
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # Checkout repository
-      - name: Checkout repository
-        uses: actions/checkout@v4
+    - name: Checkout repo
+      uses: actions/checkout@v3
 
-      # Setup Hugo (Extended version)
-      - name: Setup Hugo
-        uses: peaceiris/actions-hugo@v3
-        with:
-          hugo-version: '0.146.0'
-          extended: true
+    - name: Setup Go
+      uses: actions/setup-go@v4
+      with:
+        go-version: '1.23'
 
-      # Setup Go (Hugo Modules require Go)
-      - name: Setup Go
-        uses: actions/setup-go@v5
-        with:
-          go-version: '1.22'
+    - name: Setup Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
 
-      # Setup Node.js (Toha requires Node >= 18.x)
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
-        with:
-          node-version: '18.x'
+    - name: Setup Hugo
+      uses: peaceiris/actions-hugo@v3
+      with:
+        hugo-version: '0.146.0'
+        extended: true
 
-      # Install npm dependencies (needed for Toha v4)
-      - name: Install npm dependencies
-        run: npm ci
+    - name: Install npm packages
+      run: npm install
 
-      # Initialize Hugo Modules
-      - name: Initialize Hugo Modules
-        run: hugo mod tidy
+    - name: Build Hugo site
+      run: hugo --minify
 
-      # Build Hugo site
-      - name: Build site
-        run: hugo --minify
+    - name: Fix Jekyll invalid date error
+      run: |
+        # Replace the invalid date line in your default.html layout
+        sed -i 's/"{{ .Date }}"/{{ page.date | date: "%Y-%m-%d" }}/g' _layouts/default.html
 
-      # Deploy to GitHub Pages
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+    - name: Build Jekyll site
+      uses: actions/jekyll-build-pages@v1
+
+    - name: Disable Jekyll on GitHub Pages
+      run: echo "" > public/.nojekyll
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v4
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./public
