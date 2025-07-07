@@ -1,4 +1,4 @@
-name: Build and Deploy Site
+name: Build and Deploy Hugo Site
 
 on:
   push:
@@ -6,48 +6,25 @@ on:
       - main
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repo
-      uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    - name: Setup Go
-      uses: actions/setup-go@v4
-      with:
-        go-version: '1.23'
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: '0.146.0' # replace with your required version
+          extended: true
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: '18'
+      - name: Build site
+        run: hugo --minify
 
-    - name: Setup Hugo
-      uses: peaceiris/actions-hugo@v3
-      with:
-        hugo-version: '0.146.0'
-        extended: true
-
-    - name: Install npm packages
-      run: npm install
-
-    - name: Build Hugo site
-      run: hugo --minify
-
-    - name: Fix Jekyll invalid date error
-      run: |
-        # Replace the invalid date line in your default.html layout
-        sed -i 's/"{{ .Date }}"/{{ page.date | date: "%Y-%m-%d" }}/g' _layouts/default.html
-
-    - name: Build Jekyll site
-      uses: actions/jekyll-build-pages@v1
-
-    - name: Disable Jekyll on GitHub Pages
-      run: echo "" > public/.nojekyll
-
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v4
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./public
+      # Optional: Deploy to GitHub Pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
