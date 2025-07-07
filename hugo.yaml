@@ -28,6 +28,8 @@ params:
       enable: false
     toc:
       enable: true
+    darkMode:
+      enable: true
 
   footer:
     enable: true
