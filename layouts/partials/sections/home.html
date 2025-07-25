@@ -33,7 +33,7 @@
 
 {{/* apply image processing. don't use "Fit" in svg or gif because its not supported */}}
 {{ if and $authorImage (and (ne $authorImage.MediaType.SubType "svg") (ne $authorImage.MediaType.SubType "gif")) }}
-  {{ $authorImage = $authorImage.Resize "300x300" }}
+  {{ $authorImage = $authorImage.Fill "300x300" }}
 {{ end }}
 
 {{ $src := resources.Get $backgroundImage }}
