@@ -1,15 +1,30 @@
 section:
-  name: Experiences # Titre de la section (par défaut: "" )
-  id: experiences # url id/slug of section *Required*
+  name: Experiences
+  id: experiences
   enable: true
   weight: 3
   showOnNavbar: true
 
 experiences:
 - company:
-    name: Squad
-    url: "https://www.squad.fr"
-    location: Colomiers, France
+    name: EZ-WHEEL
+    location: Angouleme, France
+  positions:
+    - designation:  Python Developer – FullStack
+      start: Sep 2025
+      # end: Feb 2025
+      responsibilities:
+        - Drive full-stack feature development for the EZ-Way platform using Python (NiceGUI framework), JavaScript, and Tailwind CSS, delivering enhanced functionality from concept to deployment.
+        - Optimize application performance through strategic code refactoring, improving system efficiency and user experience across the platform.
+        - Collaborate on code quality initiatives by participating in code reviews with the tech lead, ensuring adherence to best practices and maintainable architecture.
+        - Enhance UI/UX design by implementing responsive layouts and incorporating user-centric design improvements, resulting in increased accessibility across devices.
+        - Implement automated testing frameworks using Pytest to improve code reliability, reduce regression bugs, and accelerate deployment cycles.
+        - Document technical solutions in Confluence, creating comprehensive knowledge bases that streamline team collaboration and onboarding processes.
+        - Bridge technical and business requirements by communicating with stakeholders to translate business needs into scalable technical solutions.
+        - Contribute to agile development workflows, delivering iterative improvements and maintaining high product quality in a fast-paced environment.
+- company:
+    name: AIRBUS ATR
+    location: Toulouse, France
   positions:
     - designation:  Python Developer – Backend & Automation
       start: Oct 2022
@@ -21,8 +36,7 @@ experiences:
         - Worked in an English-speaking environment with distributed teams.
 
 - company:
-    name: Consort France
-    url: "https://www.consort-group.com"
+    name: CANAL+
     location: Issy-les-Moulineaux, France
   positions:
     - designation: Python Developer
