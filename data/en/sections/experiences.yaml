@@ -30,11 +30,13 @@ experiences:
       start: Oct 2022
       end: Feb 2025
       responsibilities:
-        - Designed and deployed Zabbix monitoring models, cutting network downtime by 20%.
-        - Built a Python pipeline for interactive network maps, improving visibility by 40%.
-        - Maintained CI/CD pipelines (Jenkins, Kubernetes) and automated deployments with Ansible/AWX.
-        - Worked in an English-speaking environment with distributed teams.
-
+        - Developed Zabbix monitoring templates, reducing network downtime by 20%.
+        - Built an end-to-end automated pipeline to generate interactive network maps, improving visibility by 40%.
+        - Wrote unit tests for core features using pytest, ensuring code reliability and maintainability.
+        - Maintained Jenkins pipelines and troubleshooted middleware on Kubernetes (EKS).
+        - Automated Ansible role deployments through AWX.
+        - Handled 50+ Jira tickets/month and wrote technical documentation on Confluence.
+        - Worked in an English-speaking environment with regular communication, ticketing, and documentation in English.
 - company:
     name: CANAL+
     location: Issy-les-Moulineaux, France
@@ -43,6 +45,10 @@ experiences:
       start: Sep 2021
       end: Aug 2022
       responsibilities:
-        - Developed an automated reporting tool, reducing KPI generation time from 0.5 days to 15 minutes.
-        - Designed interactive dashboards with Dash & Plotly for business teams.
-
+        - Designed and developed automation tools and dashboards to streamline internal workflows.
+        - Created a secure Django web application to automate dashboard creation and KPI calculations.
+        - Reduced production time from 0.5 day to 15 minutes through custom tooling.
+        - Built interactive dashboards using Dash and Plotly, fully integrated within Django.
+        - Improved data processing by automating Excel file aggregation with Python and Pandas.
+        - Contributed to maintaining high-quality backend services with a strong focus on automation and performance.
+        - Wrote unit tests for core features using pytest, ensuring code reliability and maintainability.
