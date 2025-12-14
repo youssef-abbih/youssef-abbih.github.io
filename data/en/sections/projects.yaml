@@ -19,10 +19,10 @@ section:
 projects:
 - name: Yark
   role: Creator & Developer
-  timeline: "Jun 2025 – Present"
+  timeline: "Jun 2025 – Nov 2025"
   # repo: https://github.com/youssef-abbih/yark
   summary: A Python CLI tool that generates and validates project directory structures from YAML files, enabling developers to define and enforce consistent folder and file layouts easily.
-  tags: ["python", "cli", "yaml", "tooling", "in-progress"]
+  tags: ["python", "cli", "yaml", "tooling"]
 
 - name: DeployMe
   role: Creator & Developer
